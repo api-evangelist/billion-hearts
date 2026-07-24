@@ -1,8 +1,24 @@
 aid: billion-hearts
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/billion-hearts.png
 name: Billion Hearts
-description: 'Billion Hearts is a company surfaced as a portfolio company of general-catalyst and added
-  to the API Evangelist network as a stub for enrichment. Sector: consumer. This profile is a lead awaiting
-  the enrichment pipeline.'
+description: 'Billion Hearts is a consumer-sector company backed by General Catalyst
+  (2024) and based in Asia, with an investor group that includes Neeraj Arora, Rahul
+  Garg, and Abishek Chopra. It was surfaced as a portfolio company of general-catalyst
+  and added to the API Evangelist network as a stub for enrichment. At the time of
+  profiling the company publishes no public developer surface — no API, documentation,
+  SDKs, or developer portal — and its website resolves to a placeholder, so this profile
+  remains an identity-only lead awaiting a real API surface to enrich.'
 url: https://raw.githubusercontent.com/api-evangelist/billion-hearts/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,13 +28,27 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
 - Consumer
+- Startup
+- General Catalyst
+- Asia
+- Portfolio
 apis: []
+common:
+- type: DomainSecurity
+  url: security/billion-hearts-domain-security.yml
+- type: Website
+  url: https://www.billionhearts.com/
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
